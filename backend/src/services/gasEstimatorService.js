@@ -28,6 +28,7 @@ const MAX_HISTORY_POINTS = 40;           // ~10 min @ 15 s cadence
 const SPIKE_MULTIPLIER = 1.5;            // p50 > 1.5× rolling avg → spike
 
 // Minimum inclusion fee floor enforced by the Stellar protocol (100 stroops).
+// Any value below this is clamped up to ensure transactions are accepted.
 const BASE_FEE_FLOOR = 100n;
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
